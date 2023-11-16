@@ -93,7 +93,7 @@ Simulating a worker failure:
 ```
 
 ## Submission:
-You can submit everything via GitLab.
+You can submit everything via GitLab, until **Thursday, 30th of November, 14:00**.
 First fork this repository, and add all members of your group to a single repository.
 Then, in this group repository, add:
 * Code that implements the assignment
