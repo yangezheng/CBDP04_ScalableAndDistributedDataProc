@@ -1,4 +1,4 @@
-FROM ubuntu:20.04 as base
+FROM ubuntu:22.04 as base
 
 RUN apt-get update && apt-get install -y cmake g++ libasan6 libcurl4-openssl-dev
 WORKDIR /cbdp
@@ -7,7 +7,7 @@ ENV CBDP_PORT 4242
 FROM base as coordinator
 
 COPY cmake-build-debug/coordinator .
-CMD exec ./coordinator https://db.in.tum.de/teaching/ws2223/clouddataprocessing/data/filelist.csv "$CBDP_PORT"
+CMD exec ./coordinator https://db.in.tum.de/teaching/ws2324/clouddataprocessing/data/filelist.csv "$CBDP_PORT"
 
 FROM base as worker
 
